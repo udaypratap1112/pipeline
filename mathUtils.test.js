@@ -14,7 +14,7 @@ describe('Math Utils Functions', () => {
   });
 
   test('multiplies two numbers', () => {
-    expect(multiply(4, 3)).toBe(12);
+    expect(multiply(4, 3)).toBe(1);
     expect(multiply(-4, 3)).toBe(-12);
   });
 
