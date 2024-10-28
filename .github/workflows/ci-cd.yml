@@ -9,7 +9,7 @@ on:
       - main
 
 jobs:
-  build:
+  test-and-run:
     runs-on: ubuntu-latest
 
     steps:
@@ -21,10 +21,15 @@ jobs:
         with:
           node-version: '16'  # Set the Node version to match your project requirements
 
-      
+      - name: Installing dependencies
+        run: npm install    
 
-      - name: Run index file
-        run: npm run dev  # Assumes you have tests configured in your package.json
+      - name: Run tests
+        run: npm run test  # Assumes you have tests configured in your package.json
+
+      - name: final step
+        if: success()
+        run: npm run dev    
                 
 
 

@@ -1,8 +1,3 @@
-console.log('practicing ci/cd pipeline');
-
-function sum(a, b) {
-    console.log(a + b);
-    return a+b
+for (let i = 0; i < 5; i++){
+    console.log("all steps succeed");
 }
-
-console.log("here is the sum:" + sum(5,8));
