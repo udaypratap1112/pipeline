@@ -5,4 +5,4 @@ function sum(a, b) {
     return a+b
 }
 
-console.log("here is the sum:"+ sum(5+8));
+console.log("here is the sum:" + sum(5,8));
